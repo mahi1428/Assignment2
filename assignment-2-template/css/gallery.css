@@ -1,0 +1,89 @@
+/* Reset and General Styles */
+html {
+    background-color: rgb(235, 254, 158);
+   
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   
+}
+
+/* Header Styles */
+h1 {
+    text-align: center;
+    
+}
+
+/* Gallery Section Styles */
+#gallery {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+    
+}
+
+#gallery figure {
+    margin: 0 auto;
+   
+    max-width: 100%;
+}
+
+#gallery img {
+    display: block;
+   
+    margin: 0 auto;
+    
+    max-width: 100%;
+    
+    height: auto;
+}
+
+#figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    text-align: center;
+    
+}
+
+/* Thumbnail List Styles */
+#thumbnailList {
+    list-style: none;
+    
+    padding: 0;
+  
+    display: flex;
+    
+    justify-content: center;
+   
+    margin-top: 20px;
+    
+}
+
+#thumbnailList li {
+    margin: 0 5px;
+   
+    float: left;
+    /* Float thumbnails to the left */
+}
+
+.smallPic {
+    width: 120px;
+  
+    height: 80px;
+
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+    transition: transform 0.3s ease-in-out;
+    /* Smooth transition on hover */
+    filter: grayscale(1);
+    /* Apply grayscale filter to thumbnails */
+}
+
+.smallPic:hover {
+    transform: scale(1.1);
+    
+    filter: grayscale(0);
+    
+}
